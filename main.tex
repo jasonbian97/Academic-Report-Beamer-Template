@@ -1,0 +1,90 @@
+\documentclass[UTF8]{ctexbeamer}
+%\usepackage[utf8]{inputenc}
+\usepackage{pgfpages}
+\usepackage{tikz}
+\usepackage{animate} % for insert gif
+\usepackage{media9}% for insert movie
+%\usepackage[UTF8]{ctex}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{thuthesis}
+\usepackage{ IEEEtrantools }
+\usepackage{booktabs}
+\usepackage{pifont}%for cmark and xmark
+%\usefonttheme{default}
+%\usetheme{Madrid}
+\usetheme{Warsaw}
+%\setbeamercovered{transparent}
+\setbeamertemplate{footline}[frame number]
+\beamertemplatenavigationsymbolsempty  
+\usetikzlibrary{arrows,shapes}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+%Information to be included in the title page:
+\title[Vitiligo Segmentation] %optional
+{基于皮肤病图像的白癜风分割}
+\subtitle{弱监督方法及``AI落地"}
+ 
+\author[边张行 08015409] % (optional, for multiple authors)
+{报告人：边张行(08015409) \and \\~\\指导教师：夏思宇}
+ 
+\institute[SEU] % (optional)
+{
+\normalsize 东南大学自动化学院, 南京
+}
+ 
+\date[June 4, 2019] % (optional)
+{2019年6月4日 }
+ 
+\logo{\includegraphics[height=1cm]{SoutheastUniversity.jpg}}
+%\logo{\includegraphics[height=1.5cm]{Automation.jpg}}
+
+\AtBeginSection[] % to put the table of contents at the beginning of each section and highlight the title of the current section.
+{
+  \begin{frame}
+    \frametitle{目录}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+ 
+\frame{\titlepage}
+ \begin{frame}
+\frametitle{目录}
+\tableofcontents
+\end{frame}
+
+%%%%%%%%  slides  %%%%%%
+\section{背景及意义}
+\input{files/introduction.tex}
+
+
+
+\section{方法原理}
+\input{files/method.tex}
+
+\section{实验结果与分析}
+\input{files/exp.tex}
+
+\section{讨论与展望}
+\input{files/discussion.tex}
+
+
+%\begin{frame}[allowframebreaks]{References}
+%\def\newblock{}
+%\nocite{*} % list references without cite them in text
+%{\tiny
+%\bibliographystyle{ieee}
+%\bibliography{References}
+%}
+%\end{frame}
+
+
+\end{document}
